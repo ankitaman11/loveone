@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Beautiful Lines</title>
+    <style>
+        /* ... (previous styles remain unchanged) ... */
+
+        #floatingMessage {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff80b3; /* Lighter Pink */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: none; /* Hide initially */
+            z-index: 1000;
+            animation: heartbeat 1s infinite; /* Apply the heartbeat animation */
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="floatingMessage">I Love You</div>
+    <script src="quotes.js"></script>
+    <script src="floating-message.js"></script>
+    <div id="floatingMessage">I Miss  You</div>
+    <script src="quotes.js"></script>
+    <script src="floating-message.js"></script>
+    <header>
+        <h1> Beautiful Lines For you</h1>
+        <p>Expressing love through words</p>
+    </header>
+
+    <section id="quoteSection">
+        <!-- Quotes will be dynamically added here -->
+    </section>
+    <div id="loveLetterSection">
+        <button id="loveLetterToggle">Read My Love Letter</button>
+        <div id="loveLetterContent" style="display: none;">
+            <p>My Dearest [Your Girlfriend's Name],</p>
+            <p>Ever since you came into my life, every day has been brighter, more beautiful, and filled with love. Your presence is a gift that I cherish, and your love is the most precious thing in my world.</p>
+            <p>This virtual love letter is a small token of my feelings for you. I love you more than words can express, and I'm grateful for every moment we share together.</p>
+            <p>With all my love,</p>
+            <p>[Your Name]</p>
+        </div>
+    </div>
+
+    <footer>
+        Made with ❤️ for Winnie Darling
+    </footer>
+   
+
+    <script src="quotes.js"></script>
+</body>
+
+</html>
